@@ -84,14 +84,14 @@ export default function Todo({ todo }: { todo: TodoType }) {
         </button>
       ) : (
         <button
-          className="mr-3 rounded-md border border-black/5 bg-black/10 px-4 py-2 text-black hover:bg-rose-800 hover:text-white active:scale-105"
+          className="mr-3 rounded-md border border-black/5 bg-black/10 px-4 py-2 text-black hover:bg-gray-800 hover:text-white active:scale-105"
           onClick={handleEditToggle}
         >
           Edit
         </button>
       )}
       <button
-        className="mr-3 rounded-md border border-black/5 bg-black/10 px-4 py-2 text-black hover:bg-gray-800 hover:text-white active:scale-105"
+        className="rounded-md border border-black/5 bg-black/10 px-4 py-2 text-black hover:bg-gray-800 hover:text-white active:scale-105"
         onClick={handleStatusChange}
       >
         {todo.completed ? "Finished" : "Finish"}
